@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.polytech.unice.fr/si/4a/appserv/demos" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://webservice/" name="UsersImplService" targetNamespace="http://www.polytech.unice.fr/si/4a/appserv/demos">
+  <wsdl:import location="http://localhost:8080/COD_V0/webservices/UsersService?wsdl=UsersWs.wsdl" namespace="http://webservice/">
+    </wsdl:import>
+  <wsdl:binding name="UsersImplServiceSoapBinding" type="ns1:UsersWs">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="changCreditCard">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="changCreditCard">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="changCreditCardResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createShop">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="createShop">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createShopResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createShopRecipe">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="createShopRecipe">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createShopRecipeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllCookings">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllCookings">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllCookingsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="removeUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="removeUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createPersonalRecipe">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="createPersonalRecipe">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createPersonalRecipeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createOrder">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="createOrder">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createOrderResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllDoughs">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllDoughs">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllDoughsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllRecipesByUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllRecipesByUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllRecipesByUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllShops">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllShops">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllShopsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShopUserById">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getShopUserById">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getShopUserByIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changeFavoriteShop">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="changeFavoriteShop">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="changeFavoriteShopResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUsers">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllUsers">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllUsersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllCustomerUsers">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllCustomerUsers">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllCustomerUsersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="removeRecipe">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="removeRecipe">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="removeRecipeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createShopUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="createShopUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createShopUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllToppings">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllToppings">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllToppingsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updatePersonalRecipe">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="updatePersonalRecipe">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updatePersonalRecipeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getShopById">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getShopById">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getShopByIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteShop">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="deleteShop">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteShopResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllOrders">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllOrders">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllOrdersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllRecipes">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllRecipes">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllRecipesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllMixs">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllMixs">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllMixsResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllFlavours">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllFlavours">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllFlavoursResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createCustomerUser">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="createCustomerUser">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createCustomerUserResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllShopRecipes">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllShopRecipes">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllShopRecipesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserOrders">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getUserOrders">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUserOrdersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCustomerUserById">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getCustomerUserById">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCustomerUserByIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllShopUsers">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getAllShopUsers">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllShopUsersResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UsersImplService">
+    <wsdl:port binding="tns:UsersImplServiceSoapBinding" name="UsersImplPort">
+      <soap:address location="http://localhost:8080/COD_V0/webservices/UsersService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

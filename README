@@ -1,0 +1,58 @@
+README
+
+Pour lancer le server :
+mvn clean package tomee:run
+
+
+Pour lancer le client :
+mvn clean package exec:java
+
+
+Pour la page JSF :
+http://localhost:8080/COD_V0/bonjour.xhtml
+(le premier champs est l'adresse email du manager, le second son mot de passe)
+Pour avoir un exemple concret et visible, d'abord lancer le client ShopManager (choix 2 à l'execution du client)
+qui va peupler le modèle, puis se connecter (sur la page JSF) avec les identifiants : "my@mal.com" et "MY@password".
+
+Lors de l'execution du client, l'utilisateur doit d'abord entrer l'adresse de la machine
+sur laquelle tourne le server. S'il ne tape rien l'host par default est "localhost".
+
+Il doit ensuite choisir entre  2 Webservices :
+    - Celui destiné à être utilisé par les magasins
+    - Celui destiné à être utilisé par les clients et l'administrateur de TCF.
+
+Dans le premier cas cela lancera une simulation ayant pour but de donner un exemple de scénario pouvant se produire.
+Au cours de cette simulation :
+    -Création de magasins
+    -Création de clients (de TCF)
+    -Création d'un Shop manager et assignement du magasin qu'il gère
+    -Création de commandes par les clients.
+    -Notre Shop manager demande à voir les commande réalisées qui concernent sa boutique
+    -Seules les commandes concernant son magasins lui sont retournées.
+    -On supprime ce que l'on a créé.
+
+
+Le second WebService es tune version d'essai interactive déstinée à tester les premières fonctionnalités de TCF
+    -Un client de TCF peut :
+        *Renseigner et créer une commande, la commande est d'abord créée entierement avant d'être envoyée au serveur.
+            Si l'utilisateur est loggé et a un magasin favoris et/ou un numero de CB, ce magasin/numero de CB sera alors automatiquement celui de la commande
+        *Créer un compte en renseignant Prenom, Nom, adresse e-mail et mot de passe. L'adresse email est l'identifiant d'un client.
+        *Se logger en renseignant son adresse email et son password.
+        *Selectionner un magasin favoris. S'il en a déjà un celui-ci sera remplacé par le nouveau.
+        *Ajoutrer son numero de carte. S'il en a déjà un celui-ci sera remplacé par le nouveau.
+
+    -Un admin de TCF peut, une fois connecté :
+        *Créer un magasin en renseignant son Adresse, le nombre maximum de coockies et de clients qu'il peut recevoir par heure et la taxe qui s'y applique.
+        *Supprimer des magasins.
+        *Visualiser la liste des magasins magasins ainsi que celle des clients.
+        *Visualiser la liste des Commandes.
+
+Il est egalement possible pour un gestionnaire de magasin de consulter la liste des commandes devant être retirées à son magasin par une page web JSF en renseignant
+son email et son password.
+
+Par rapport à la version Alpha, nous avons amélioré pour la partie EJB:
+    -L'integration des recettes de cookies aux commandes.
+    -La generation du Long time(correspondant alors timeStamp de la date de retrait) de UserOrder a été remplacée par un abjet Date
+    -Amelioration de l'interface, fournissant des fonctionnalités plus nombreuses et plus robustes (toutes les entrées clavier ne sont pas vérifiées).
+
+

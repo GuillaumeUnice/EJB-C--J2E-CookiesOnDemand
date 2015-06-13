@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+    <title>Cookies On Demand</title>
+</h:head>
+<h:body>
+    <h1>Cookies On Demand</h1>
+    <p>Bienvenue #{userViewBean.getUser(userViewBean.email)} !</p>
+
+    <h:dataTable value="#{userViewBean.ordersByShopUser}" var="myVar">
+        <h:column>
+            <f:facet name="header">
+                ID
+            </f:facet>
+            #{myVar.id}
+        </h:column>
+        <h:column>
+            <f:facet name="header">
+                Shop
+            </f:facet>
+            #{myVar.shop}
+        </h:column>
+    </h:dataTable>
+
+
+
+
+    <h:form>
+        <h:commandButton value="retour" action="bonjour" />
+    </h:form>
+</h:body>
+</html>
